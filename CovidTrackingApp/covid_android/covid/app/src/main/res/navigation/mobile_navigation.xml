@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_status">
+
+    <fragment
+        android:id="@+id/nav_status"
+        android:name="com.utd.covidtracker.ui.status.HomeFragment"
+        android:label="@string/menu_status"
+        tools:layout="@layout/fragment_status" />
+
+    <fragment
+        android:id="@+id/nav_disease"
+        android:name="com.utd.covidtracker.ui.disease.DiseaseInfoFragment"
+        android:label="@string/menu_disease"
+        tools:layout="@layout/fragment_disease" />
+
+    <fragment
+        android:id="@+id/nav_update"
+        android:name="com.utd.covidtracker.ui.update.UpdateUserFragment"
+        android:label="@string/menu_update"
+        tools:layout="@layout/fragment_update_user" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.utd.covidtracker.ui.settings.SettingsFragment"
+        android:label="settings_fragment"
+        tools:layout="@layout/settings_fragment" />
+</navigation>
